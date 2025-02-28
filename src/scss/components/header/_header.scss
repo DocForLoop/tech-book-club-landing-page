@@ -1,2 +1,74 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+body {
+    min-block-size: 100vh;
+}
+
+.body-wrapper {
+    inline-size: 100%;
+    max-inline-size: rem(2150);
+}
+
+.header {
+    padding-inline: fluid(16, 32, 375, 768);
+    padding-block-start: fluid(24, 32, 375, 768);
+    padding-block-end: 80px;
+    background-color: var(--clr-light-secondary);
+    background-image: url(../assets/images/pattern-light-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+
+    &__logo {
+        inline-size: rem(190);
+        block-size: rem(36);
+    }
+
+    &__title {
+        max-inline-size: 16ch;
+    }
+
+    &__desc {
+        padding-inline-end: 9px;
+        max-inline-size: 55ch;
+    }
+
+    &__btn {
+        @include m.button-primary;
+    }
+
+    &__btn-icon {
+        inline-size: rem(24);
+        block-size: rem(24);
+    }
+
+    &__hero-img {
+        inline-size: 100%;
+        block-size: 100%;
+        aspect-ratio: 343 / 385;
+        max-inline-size: rem(850);
+        border-radius: rem(5);
+    }
+}
+
+.members {
+
+    &__avatar {
+        inline-size: rem(110);
+        block-size: rem(40);
+    }
+
+    &__star-icon {
+        inline-size: rem(24);
+        block-size: rem(24);
+    }
+
+    &__desc {
+        font-family: var(--ff-primary);
+        font-size: var(--fs-caption);
+        line-height: var(--lh-2);
+        letter-spacing: var(--ls-secondary);
+        color: var(--clr-dark-secondary);
+    }
+
+}

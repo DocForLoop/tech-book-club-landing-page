@@ -1,17 +1,38 @@
 @use './functions' as *;
 
-@mixin button-primary {
+@mixin button-primary($color: var(--clr-dark-primary), $bg-color: var(--clr-btn-primary), $grad-color: var(--clr-grad-btn-primary)) {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-button);
+    font-weight: var(--fw-heading-secondary);
+    line-height: var(--lh-3);
+    letter-spacing: var(--ls-secondary);
     text-transform: uppercase;
-    padding-inline: 20px;
-    padding-block: 24px;
+    outline: 2px solid $color;
+    color: $color;
+    background: $bg-color;
+    padding-inline: 23px;
+    padding-block: 20px;
     border-radius: rem(8);
-}
+    max-inline-size: rem(380);
+    position: relative;
+    overflow: clip;
 
-@mixin button-secondary {
-    text-transform: uppercase;
-    color: var(--clr-dark-primary);
-    border: 2px solid var(--clr-dark-primary);
-    background-image: linear-gradient(90deg, var(--clr-btn-primary) 0%, var(--clr-btn-primary) 100%);
-    padding-inline: 20px;
-    border-radius: rem(8);
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: $grad-color;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        mix-blend-mode: multiply;
+    }
+
+    &:hover::before,
+    &:focus-visible::before {
+        opacity: 1;
+    }
+
+    &:focus-visible {
+        outline: 6px double $color;
+    }
 }

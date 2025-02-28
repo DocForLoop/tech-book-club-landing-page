@@ -21,42 +21,46 @@
     <script type="module" src="src/main.js" defer></script>
   </head>
   <body>
-    <div>
-      <header>
-        <a href="#"><img src="/src/assets/images/logo.svg" alt="Home of Tech book club" width="190" height="36"></a>
+    <div class="body-wrapper">
+      <header class="header">
+        <a href="#">
+          <img class="header__logo" src="/src/assets/images/logo.svg" 
+          alt="Home of Tech book club" width="190" height="36">
+        </a>
 
-        <section aria-labelledby="header-title">
-          <div>
-            <div>
-              <h1 id="header-title">Join the ultimate tech book club</h1>
-              <p>Turn your reading time into learning time with fellow tech enthusiasts. 
+        <section class="header__wrapper" aria-labelledby="header-title">
+          <div class="header__content">
+            <div class="header__text">
+              <h1 class="header__title" id="header-title">Join the ultimate tech book club</h1>
+              <p class="header__desc">Turn your reading time into learning time with fellow tech enthusiasts. 
                 Get curated recommendations, join vibrant discussions, and level up your 
                 skills one chapter at a time.
               </p>
             </div>
 
-            <div>
-              <a href="#">Review membership options <img src="/src/assets/images/icon-arrow-down.svg" 
+            <div class="header__cta-wrapper">
+              <a class="header__btn" href="#">Review membership options 
+                <img class="header__btn-icon" src="/src/assets/images/icon-arrow-down.svg" 
                 alt="" width="24" height="24">
               </a>
-              <div>
-                <img src="/src/assets/images/image-avatars.webp" 
+              <div class="members">
+                <img class="members__avatar" src="/src/assets/images/image-avatars.webp" 
                     alt="" width="110" height="40">
-                <div>
-                  <ul role="presentation">
-                    <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
-                    <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
-                    <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
-                    <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
-                    <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
+                <div class="members__content">
+                  <ul class="members__star-list" role="presentation">
+                    <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
+                    <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
+                    <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
+                    <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
+                    <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24"></li>
                   </ul>
-                  <p>200+ developers joined already</p>
+                  <p class="members__desc">200+ developers joined already</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <img src="/src/assets/images/image-hero-desktop.webp"
+          <img class="header__hero-img" src="/src/assets/images/image-hero-desktop.webp"
               alt="" width="343" height="385" loading="lazy" decoding="async">
         </section>
       </header>
@@ -230,18 +234,18 @@
           <a href="#">Review membership options <img src="/src/assets/images/icon-arrow-up.svg" 
             alt="" width="24" height="24">
           </a>
-          <div>
-            <img src="/src/assets/images/image-avatars.webp" 
+          <div class="members">
+            <img class="members__avatar" src="/src/assets/images/image-avatars.webp" 
                 alt="" width="110" height="40" loading="lazy" decoding="async">
-            <div>
-              <ul role="presentation">
-                <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
-                <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
-                <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
-                <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
-                <li><img src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
+            <div class="members__content">
+              <ul class="members__star-list" role="presentation">
+                <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
+                <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
+                <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
+                <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
+                <li><img class="members__star-icon" src="/src/assets/images/icon-star.svg" alt="" width="24" height="24" loading="lazy" decoding="async"></li>
               </ul>
-              <p>200+ developers joined already</p>
+              <p class="members__desc">200+ developers joined already</p>
             </div>
           </div>
         </section>
