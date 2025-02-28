@@ -1,1 +1,17 @@
 @use './functions' as *;
+
+@mixin button-primary {
+    text-transform: uppercase;
+    padding-inline: 20px;
+    padding-block: 24px;
+    border-radius: rem(8);
+}
+
+@mixin button-secondary {
+    text-transform: uppercase;
+    color: var(--clr-dark-primary);
+    border: 2px solid var(--clr-dark-primary);
+    background-image: linear-gradient(90deg, var(--clr-btn-primary) 0%, var(--clr-btn-primary) 100%);
+    padding-inline: 20px;
+    border-radius: rem(8);
+}

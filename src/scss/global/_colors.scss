@@ -1,0 +1,11 @@
+:root {
+    --clr-dark-primary: hsl(194, 77.8%, 10.6%);
+    --clr-dark-secondary: hsl(194, 22.8%, 28.4%);
+    --clr-light-primary: hsl(0, 0%, 100%);
+    --clr-light-secondary: hsl(17, 41.2%, 96.7%);
+    --clr-light-tertiary: hsl(17, 12.3%, 88.8%);
+    --clr-btn-primary: hsl(22, 100%, 96.9%);
+    --clr-grad-text: linear-gradient(107deg, #FF9A60 -21.37%, #062630 61.84%);
+    --clr-grad-btn-primary: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+    --clr-grad-btn-secondary: linear-gradient(90deg, var(--clr-dark-secondary) 0%, var(--clr-dark-primary) 100%);
+}
