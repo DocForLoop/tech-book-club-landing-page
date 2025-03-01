@@ -1,1 +1,125 @@
 @use '@scss/global/functions' as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(64, 80, 375, 768);
+}
+
+.read {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: fluid(24, 34, 375, 768);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: fluid(16, 24, 375, 768);
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        column-gap: 14px;
+    }
+}
+
+.club {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__word {
+        display: inline-flex;
+    }
+}
+
+.steps {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 64px;
+
+    &__list {
+        display: flex;
+        column-gap: 48px;
+    }
+
+    &__list-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__order {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(24, 40, 375, 768);
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__list-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+
+    &__features {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__feature {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+    }
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    &__star-list {
+        display: flex;
+        column-gap: 6px;
+    }
+}

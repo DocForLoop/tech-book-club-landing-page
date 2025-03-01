@@ -1,2 +1,192 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.main {
+    padding-inline: fluid(16, 32, 375, 768);
+}
+
+.read {
+
+    &__title {
+        max-inline-size: 26ch;
+    }
+
+    &__list-icon {
+        inline-size: rem(28);
+        block-size: rem(28);
+    }
+
+    &__img {
+        inline-size: 100%;
+        block-size: auto;
+        border-radius: rem(12);
+        max-inline-size: rem(850);
+    }
+
+    &__list-desc {
+        padding-inline-end: 8px;
+    }
+}
+
+.club {
+
+    &__decor-img {
+        display: none;
+    }
+
+    &__title {
+        max-inline-size: 24ch;
+    }
+
+    &__word {
+        position: relative;
+        inline-size: rem(150);
+    }
+    
+    &__word-decor-img {
+        inline-size: fluid(108, 159, 375, 768, rem);
+        block-size: fluid(46, 68, 375, 768, rem);
+        position: absolute;
+        display: inline;
+        inset-inline-start: rem(-9);
+    }
+
+    &__desc {
+        max-inline-size: 57ch;
+        padding-inline-end: 3px;
+    }
+
+    &__accent {
+        font-weight: var(--fw-heading-secondary);
+    }
+
+    &__img {
+        inline-size: 100%;
+        block-size: auto;
+        border-radius: rem(12);
+        max-inline-size: rem(850);
+    }
+}
+
+.steps {
+
+    padding-block: 80px;
+    padding-inline: 60px;
+    background-color: var(--clr-light-secondary);
+    background-image: url(../assets/images/pattern-light-bg.svg),
+                    url(../assets/images/pattern-glow.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, 540px 1px;
+    background-size: auto, cover;
+    border-radius: rem(12);
+    
+    &__title {
+        text-align: center;
+        max-inline-size: 16ch;
+    }
+
+    &__number {
+        display: inline-block;
+        padding-block: 1px;
+        padding-inline: 10px;
+        font-family: var(--ff-primary);
+        font-size: var(--fs-body-secondary);
+        letter-spacing: var(--ls-secondary);
+        color: var(--clr-dark-primary);
+        border: 2px solid var(--clr-dark-primary);
+        border-radius: rem(4);
+    }
+
+    &__arrow {
+        inline-size: rem(80);
+        block-size: rem(33);
+    }
+
+    &__desc {
+        font-family: var(--ff-primary);
+        font-size: var(--fs-steps);
+        font-weight: var(--fw-heading-secondary);
+        line-height: var(--lh-3);
+        letter-spacing: var(--ls-secondary);
+        color: var(--clr-dark-primary);
+        max-inline-size: 17ch;
+    }
+}
+
+.plans {
+
+    &__title {
+        align-self: center;
+    }
+
+    &__list-item {
+        outline: rem(1.5) solid var(--clr-light-tertiary);
+        padding: 24px;
+        border-radius: rem(8);
+        inline-size: 100%;
+        max-inline-size: rem(568);
+    }
+
+    &__list-item--accent {
+        background-color: var(--clr-light-secondary);
+        background-image: url(../assets/images/pattern-glow.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: fluid(80, 160, 375, 768) 150px;
+    }
+
+    &__name {
+        font-family: var(--ff-primary);
+        font-size: var(--fs-body-secondary);
+        font-weight: var(--fw-heading-secondary);
+        line-height: var(--lh-1);
+        letter-spacing: var(--ls-secondary);
+        color: var(--clr-dark-primary);
+    }
+
+    &__price--accent {
+        font-family: var(--ff-primary);
+        font-size: var(--fs-price);
+        font-weight: var(--fw-heading-secondary);
+        line-height: var(--lh-3);
+        letter-spacing: var(--ls-secondary);
+        color: var(--clr-dark-primary);
+    }
+
+    &__divider {
+        border: 1px solid var(--clr-light-tertiary);
+    }
+
+    &__icon {
+        inline-size: rem(28);
+        block-size: rem(28);
+    }
+
+    &__btn {
+        @include m.button-primary;
+        padding-inline: 79px;
+        align-self: center;
+    }
+
+    &__btn-talk {
+        padding-inline: 94px;
+    }
+}
+
+.review {
+
+    &__star-icon {
+        inline-size: rem(28);
+        block-size: rem(28);
+    }
+
+    &__quote {
+        font-family: var(--ff-primary);
+        font-size: var(--fs-quote);
+        font-weight: var(--fw-heading-secondary);
+        line-height: var(--lh-1);
+        letter-spacing: var(--ls-secondary);
+        color: var(--clr-dark-primary);
+        max-inline-size: 29ch;
+    }
+}
