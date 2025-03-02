@@ -17,6 +17,7 @@
     max-inline-size: rem(380);
     position: relative;
     overflow: clip;
+    z-index: 1;
 
     &::before {
         content: "";
@@ -25,7 +26,7 @@
         background: $grad-color;
         opacity: 0;
         transition: opacity 0.3s ease;
-        mix-blend-mode: multiply;
+        z-index: -1;
     }
 
     &:hover::before,

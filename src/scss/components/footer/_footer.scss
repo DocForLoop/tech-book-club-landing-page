@@ -1,2 +1,62 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.footer {
+    background-color: var(--clr-dark-primary);
+    border-start-end-radius: rem(16);
+    border-start-start-radius: rem(16);
+    
+    
+    &__content {
+        padding-inline: fluid(16, 32, 375, 768);
+        padding-block-start: fluid(48, 64, 375, 768);
+    }
+
+    &__title {
+        color: var(--clr-light-secondary);
+        text-align: center;
+        margin-block-end: 16px;
+    }
+
+    &__btn {
+        @include m.button-primary(var(--clr-light-primary), var(--clr-dark-primary), var(--clr-grad-btn-secondary));
+    }
+
+    &__btn-icon {
+        inline-size: rem(24);
+        block-size: rem(24);
+    }
+
+    &__bottom {
+        padding-inline: 32px;
+        padding-block: 24px;
+        margin-inline: 16px;
+        border-block-start-color: var(--clr-dark-secondary);
+        border-block-start-width: 1px;
+        border-block-start-style: solid;
+    }
+
+    &__copyright {
+        color: var(--clr-light-secondary);
+        font-family: var(--ff-primary);
+        font-size: var(--fs-caption);
+        line-height: var(--lh-2);
+        letter-spacing: var(--ls-secondary);
+    }
+
+    &__social-link {
+        color: var(--clr-light-secondary);
+    }
+}
+
+.members {
+
+    &__star-icon-big {
+        inline-size: rem(28);
+        block-size: rem(28);
+    }
+
+    &__desc--light {
+        color: var(--clr-light-secondary);
+    }
+}
