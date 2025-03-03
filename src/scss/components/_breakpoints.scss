@@ -1,2 +1,20 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+@media (width > em(768)) {
+
+    .header {
+        padding-inline: fluid(32, 135, 768, 1440);
+        background-image: url(../assets/images/pattern-light-bg.svg),
+                        url(../assets/images/pattern-glow.svg);
+        background-repeat: repeat, no-repeat;
+        background-position: top, calc(100% + 500px) calc(100% + 568px);
+        align-items: center;
+        
+        &__link {
+            display: inline-block;
+            inline-size: 100%;
+            max-inline-size: rem(850);
+        }
+    }
+}
