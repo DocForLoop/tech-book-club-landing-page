@@ -3,6 +3,10 @@
 
 @media (width > em(768)) {
 
+    .body-wrapper {
+        row-gap: fluid(80, 120, 768, 1440);
+    }
+
     .header {
         padding-inline: fluid(32, 135, 768, 1440);
         background-image: url(../assets/images/pattern-light-bg.svg),
@@ -12,9 +16,65 @@
         align-items: center;
         
         &__link {
-            display: inline-block;
+            display: block;
             inline-size: 100%;
             max-inline-size: rem(850);
         }
+    }
+
+    .main {
+        padding-inline: fluid(32, 135, 768, 1440);
+        row-gap: fluid(80, 120, 768, 1440);
+    }
+    
+    .read {
+        align-self: center;
+    }
+
+    .club {
+        align-self: center;
+
+        &__img-wrapper {
+            position: relative;
+            max-inline-size: rem(850);
+        }
+
+        &__decor-img {
+            display: inline;
+            position: absolute;
+            inset-inline-end: 50px;
+            inset-block-end: 50px;
+        }
+    }
+
+    .plans {
+        align-self: center;
+        align-items: center;
+        max-inline-size: rem(850);
+        &__title {
+            align-self: flex-start;
+        }
+
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__list-item {
+            inline-size: auto;
+            max-inline-size: rem(340);
+        }
+
+        &__btn {
+            padding-inline: 70px;
+        }
+
+        &__btn-talk {
+            padding-inline: 87px;
+        }
+    }
+
+    .review {
+        align-self: center;
     }
 }
