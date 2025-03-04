@@ -77,4 +77,17 @@
     .review {
         align-self: center;
     }
+
+    .footer {
+
+        &__content {
+            padding-block-start: fluid(64, 80, 768, 1440);
+        }
+        
+        &__bottom {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-inline: fluid(0, 135, 768, 1440);
+        }
+    }
 }
