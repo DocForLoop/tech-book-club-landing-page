@@ -7,9 +7,6 @@
     border-start-start-radius: rem(16);
     background-image: url(../assets/images/pattern-dark-bg.svg);
 
-
-    
-    
     &__content {
         padding-inline: fluid(16, 32, 375, 768);
         padding-block-start: fluid(48, 64, 375, 768);
@@ -35,7 +32,7 @@
         padding-inline: 32px;
         padding-block: 24px;
         margin-inline: 16px;
-        border-block-start: 1px solid var(--clr-dark-secondary);
+        border-block-start: rem(1) solid var(--clr-dark-secondary);
     }
 
     &__copyright {
@@ -49,15 +46,26 @@
     &__social-link {
         color: var(--clr-light-secondary);
         transition: color 0.3s ease;
+        display: inline-block;
 
         &:focus-visible {
-            outline: rem(4) double hsl(21.8,98.6%,71.6%);
+            outline: rem(4) double var(--clr-outline);
             outline-offset: rem(4);
         }
 
         &:hover {
             color: hsl(193, 12%, 43%);
         }
+    }
+
+    &__bluesky-icon {
+        inline-size: rem(22);
+        block-size: rem(23);
+    }
+
+    &__linkedin-icon {
+        inline-size: rem(18);
+        block-size: rem(19);
     }
 }
 

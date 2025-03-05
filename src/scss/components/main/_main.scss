@@ -76,7 +76,7 @@
     background-image: url(../assets/images/pattern-light-bg.svg),
                     url(../assets/images/pattern-glow.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position: 0px, 540px 1px;
+    background-position: 0px, rem(540) 1px;
     background-size: auto, cover;
     border-radius: rem(12);
     
@@ -96,7 +96,7 @@
         font-size: var(--fs-body-secondary);
         letter-spacing: var(--ls-secondary);
         color: var(--clr-dark-primary);
-        border: 2px solid var(--clr-dark-primary);
+        border: rem(2) solid var(--clr-dark-primary);
         border-radius: rem(4);
     }
 
@@ -157,7 +157,7 @@
     }
 
     &__divider {
-        border: 1px solid var(--clr-light-tertiary);
+        border: rem(1) solid var(--clr-light-tertiary);
     }
 
     &__icon {

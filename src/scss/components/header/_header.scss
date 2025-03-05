@@ -20,6 +20,7 @@ body {
     background-position: top;
 
     &__link {
+        display: inline-block;
 
         &:focus-visible {
             outline: rem(4) double var(--clr-dark-primary);
@@ -52,7 +53,7 @@ body {
 
     &__hero-img {
         inline-size: 100%;
-        block-size: 100%;
+        block-size: auto;
         aspect-ratio: 343 / 385;
         max-inline-size: rem(850);
         border-radius: rem(5);

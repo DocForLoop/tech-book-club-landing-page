@@ -8,7 +8,7 @@
     letter-spacing: var(--ls-secondary);
     text-align: center;
     text-transform: uppercase;
-    outline: 2px solid $color;
+    outline: rem(2) solid $color;
     color: $color;
     background: $bg-color;
     padding-inline: 23px;
@@ -35,6 +35,6 @@
     }
 
     &:focus-visible {
-        outline: 6px double $color;
+        outline: rem(6) double $color;
     }
 }
