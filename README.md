@@ -20,8 +20,8 @@ This is a solution to the [Tech book club landing page challenge on Frontend Men
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/)
-- [Live Site](https://)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-tech-book-club-landing-page-with-flexbox-Ycjs_pb-H3)
+- [Live Site](https://tech-book-club-landing-page-five.vercel.app)
 
 ## My process
 
