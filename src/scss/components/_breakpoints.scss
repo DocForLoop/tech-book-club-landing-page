@@ -15,7 +15,7 @@
         background-position: top, calc(100% + 500px) calc(100% + 568px);
         align-items: center;
         
-        &__link {
+        &__link-wrapper {
             display: block;
             inline-size: 100%;
             max-inline-size: rem(850);
@@ -88,6 +88,39 @@
             flex-direction: row;
             justify-content: space-between;
             margin-inline: fluid(0, 135, 768, 1440);
+        }
+    }
+}
+
+@media (width > em(1201)) {
+
+    .header {
+        row-gap: fluid(64, 80, 1201, 1440);
+        background-position: top, calc(100% + 550px) calc(100% + 400px);
+
+
+        &__link-wrapper {
+            max-inline-size: rem(1173.8);
+        }
+
+        &__desc {
+            max-inline-size: 48ch;
+        }
+
+        &__wrapper {
+            flex-direction: row;
+            align-items: center;
+            column-gap: fluid(10, 64, 1201, 1440);
+        }
+
+        &__content {
+            max-inline-size: rem(560);
+        }
+
+        &__hero-img {
+            flex: 1;
+            max-inline-size: rem(540);
+            max-block-size: rem(606);
         }
     }
 }
