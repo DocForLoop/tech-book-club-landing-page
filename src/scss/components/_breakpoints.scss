@@ -113,6 +113,10 @@
             max-inline-size: 48ch;
         }
 
+        &__btn {
+            white-space: nowrap;
+        }
+
         &__wrapper {
             flex-direction: row;
             align-items: center;
@@ -161,7 +165,7 @@
         }
 
         &__desc {
-            max-inline-size: 42ch;
+            max-inline-size: 45ch;
         }
 
         &__img {
@@ -208,6 +212,10 @@
             background-position: 110px 160px;
         }
 
+        &__btn {
+            white-space: nowrap;
+        }
+
         &__btn-starter {
             padding-inline: 43px;
         }
@@ -227,6 +235,12 @@
 
         &__quote {
             max-inline-size: 41ch;
+        }
+    }
+
+    .footer {
+        &__btn {
+            white-space: nowrap;
         }
     }
 }
