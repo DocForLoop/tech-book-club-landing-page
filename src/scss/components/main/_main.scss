@@ -71,18 +71,21 @@
 .steps {
 
     padding-block: 80px;
-    padding-inline: 60px;
+    padding-inline: fluid(20, 60, 1201, 1440);
     background-color: var(--clr-light-secondary);
     background-image: url(../assets/images/pattern-light-bg.svg),
                     url(../assets/images/pattern-glow.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position: top, 540px 1px;
+    background-position: 0px, 540px 1px;
     background-size: auto, cover;
     border-radius: rem(12);
     
     &__title {
         text-align: center;
         max-inline-size: 16ch;
+        line-height: var(--lh-2);
+        letter-spacing: rem(2);
+        align-self: center;
     }
 
     &__number {
@@ -109,7 +112,7 @@
         line-height: var(--lh-3);
         letter-spacing: var(--ls-secondary);
         color: var(--clr-dark-primary);
-        max-inline-size: 17ch;
+        max-inline-size: 19ch;
     }
 }
 

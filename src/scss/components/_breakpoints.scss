@@ -51,6 +51,7 @@
         align-self: center;
         align-items: center;
         max-inline-size: rem(850);
+
         &__title {
             align-self: flex-start;
         }
@@ -76,6 +77,11 @@
 
     .review {
         align-self: center;
+        max-inline-size: rem(970);
+
+        &__quote {
+            line-height: var(--lh-3);
+        }
     }
 
     .footer {
@@ -123,4 +129,108 @@
             max-block-size: rem(606);
         }
     }
+
+    .read {
+        flex-direction: row-reverse;
+        align-items: center;
+        column-gap: fluid(30, 80, 1201, 1440);
+
+        &__content {
+            max-inline-size: rem(530);
+        }
+
+        &__list-desc {
+            max-inline-size: 31ch;
+        }
+
+        &__img {
+            flex: 1;
+            max-inline-size: rem(560);
+            max-block-size: rem(520);
+        }
+    }
+
+    .club {
+        flex-direction: row;
+        align-items: center;
+        column-gap: fluid(30, 80, 1201, 1440);
+
+
+        &__content {
+            max-inline-size: rem(530);
+        }
+
+        &__desc {
+            max-inline-size: 42ch;
+        }
+
+        &__img {
+            flex: 1;
+            max-inline-size: rem(560);
+            max-block-size: rem(520);
+        }
+
+        &__decor-img {
+            inset-inline-end: fluid(405, 520, 1201, 1440);
+            inset-block-end: fluid(0, 31, 1201, 1440);
+        }
+    }
+
+    .steps {
+        display: flex;
+        max-inline-size: rem(1170);
+
+        &__list-item {
+            flex:1;
+        }
+    }
+
+    .plans {
+        row-gap: fluid(40, 64, 1201, 1440);
+        max-inline-size: rem(970);
+
+        &__title {
+            align-self: center;
+        }
+
+        &__list {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        &__list-item {
+            max-inline-size: rem(350);
+        }
+
+        &__list-item--accent {
+            padding-block: 40px;
+            flex:1;
+            background-position: 110px 160px;
+        }
+
+        &__btn-starter {
+            padding-inline: 43px;
+        }
+
+        &__btn--accent {
+            padding-inline: 75px;
+        }
+
+        &__btn-talk {
+            padding-inline: 60px;
+        }
+    }
+
+    .review {
+        align-items: center;
+        text-align: center;
+
+        &__quote {
+            max-inline-size: 41ch;
+        }
+    }
+
+    /* .footer {
+
+    } */
 }

@@ -3,6 +3,7 @@
 .main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: fluid(64, 80, 375, 768);
 }
 
@@ -49,7 +50,6 @@
 .steps {
     display: none;
     flex-direction: column;
-    align-items: center;
     row-gap: 64px;
 
     &__list {
